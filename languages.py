@@ -20,8 +20,8 @@ def get_number():
         return float(data)
 
 # numpy and scipy are available for use
-import numpy
-import scipy
+# import numpy
+# import scipy
 
 def recursive(phrase, n_id, info, yes_node, no_node, nodes_leaves_id, res):
     if n_id in nodes_leaves_id:
