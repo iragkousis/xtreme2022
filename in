@@ -1,19 +1,10 @@
-235000
+2
 3
-curry 40000
-nash 20000
-johnson 10000
-3
-jordan 50000
-wade 20000
-bryant 80000
-1
-james 30000
-1
-duncan 60000
-1
-oneal 100000
-
-
-
-
+Alice 1 Bob
+Chuck 1 Dave
+Dave 1 Eve
+4
+Alice 2 Bob Chuck
+Chuck 1 Bob
+Dave 2 Alice Bob
+Alice 1 Eve

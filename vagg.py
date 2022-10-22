@@ -24,17 +24,22 @@ def get_number():
 # numpy and scipy are available for use
 
 # import scipy
-N = get_number()
-M = get_number()
+jobn = get_number()
+workers = get_number()
 
-arr = []
-for i in range(N):
-    arr.append(get_number())
+jobs = []
+for _ in range(jobn):
+    jobs.append(get_number())
+# print(jobs)
+timetable = [0]*workers
+timetable = timetable.sort()
 
-if M == 1:
-    sum = 0
-    for j in range(N):
-        sum += pow(2,arr[j],1000000007)
-    print(sum % (10**9 + 7))
-else:
-    print(pow(2,max(arr),1000000007))
+# print(jobs)
+for job in jobs[::-1]:
+    timetable = timetable.sort()
+    timetable[0] += (pow(2,job))
+timetable = timetable.sort()
+print(timetable[-1]%(pow(10,9)+7))
+
+    
+
